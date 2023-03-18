@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* li {
+  list-style: none;
+}
+
+.header__icon-box a {
+  margin-left: 39px;
+}
+.header__lang-box {
+  padding: 0.375rem 1.65rem 0.375rem 0.75rem;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+.header__logo {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+}
+.header__logo img {
+  width: 101.26px;
+  height: 32px;
+  margin-top: 8px;
+}
+.header__stories {
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+}
+.header__search-box {
+  position: absolute;
+  right: 0;
+}
+.header__navbar li {
+  margin-right: 56px;
+}
+.header__navbar li a {
+  color: #333333;
+  font-size: 14px;
+  font-weight: 350px !important;
+}
+.header__dropdown {
+  display: flex;
+  border: none;
+}
+.header__dropdown ul {
+  padding-left: 0;
+  left: -22px;
+}
+.header__dropdown ul li {
+  list-style: none;
+}
+.header__dropdown ul li a {
+  padding-left: 7px;
+}
+.header__dropdown ul li:nth-child(1) a:nth-child(1) {
+  font-weight: bold !important;
+}
+.header__dropdown-picture {
+  position: absolute;
+  width: 280px;
+  height: 160px;
+  left: 104%;
+  margin-top: 20px;
+}
+.header__img-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-width: 1216px;
+  height: 480px;
+}
+.header__img-section img {
+  width: 100%;
+  height: 100%;
+}
+.header__img-text-box {
+  position: absolute;
+  text-align: center;
+  margin-top: 12%;
+}
+.header__img-text-box h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.header__img-text-box p {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.header__img-text-box button {
+  width: 208px;
+  height: 48px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.content {
+  position: relative;
+}
+.content__text {
+  width: 268px;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 8px;
+  transition: 350ms all;
+}
+.content__text:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.content__background {
+  left: -110px;
+  height: 100%;
+  z-index: 1;
+  background: #FAFBFB;
+  position: absolute;
+  width: 1440px !important;
+}
+.content .col {
+  background: #FAFBFB;
+  z-index: 2;
+  margin-top: 61px;
+  margin-bottom: 101px;
+}
+.content__img-box {
+  width: 268px;
+  height: 287px;
+  background-color: #ffffff;
+}
+.content__img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-item {
+  width: 312px;
+  height: 312px;
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+}
+
+.slider {
+  margin-top: 48px;
+  margin-bottom: 104px;
+}
+.slider__title {
+  text-align: left;
+  height: 48px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+}
+.slider__subtitle {
+  text-align: left;
+  height: 28px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 24px;
+  color: #808080;
+}
+.slider__img-title {
+  height: 28px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 2px;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+.slider__img-subtitle {
+  height: 24px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.slider__img-price {
+  height: 24px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+.slider__heart {
+  width: 24px;
+  height: 24px;
+  top: 16px;
+  right: 16px;
+  position: absolute;
+}
+.slider__heart img {
+  width: 100%;
+  height: 100%;
+}
+.slider__top-title {
+  position: absolute;
+  left: 30px;
+  top: 16px;
+  padding: 2px 8px;
+  height: 20px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  color: #000000;
+  background: #FFFFFF;
+}
+.slider__top-title-red {
+  background: #DD2727;
+  color: white;
+}
+
+.img-box__text {
+  position: relative;
+  bottom: 48px;
+  left: 16px;
+  display: inline-block;
+  padding: 5px 16px;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+.img-box__item1 {
+  position: relative;
+  margin-right: 10px;
+  width: 546px;
+  height: 358px;
+}
+.img-box__item1 img {
+  margin-right: 14px;
+  width: 100%;
+  height: 100%;
+}
+.img-box__item2 {
+  position: relative;
+  width: 261px;
+  height: 358px;
+}
+.img-box__item2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.discover {
+  margin-top: 54px;
+  height: 486px;
+}
+.discover__background {
+  background-color: #FAFBFB;
+  position: absolute;
+  width: 1440px;
+  height: 486px;
+  left: 0;
+}
+.discover.col:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.discover .col div h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+.discover .col div p {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #808080;
+}
+.discover .col div button {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: white;
+  border: 1px solid black;
+  width: 140px;
+  height: 40px;
+}
+
+.wedding {
+  position: relative;
+  height: 400px;
+  background-color: #FAFBFB;
+}
+.wedding__img {
+  width: 210px;
+  height: 263px;
+}
+.wedding__left-img {
+  top: 32px;
+  position: absolute;
+  bottom: 105px;
+}
+.wedding__right-img {
+  top: 68px;
+  position: absolute;
+  left: 464px;
+}
+.wedding__img1 {
+  z-index: 2;
+  bottom: -8px;
+  position: absolute;
+  left: 289px;
+  height: 200px;
+  width: 200px;
+  height: 263px;
+}
+.wedding__text h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 40px;
+  text-align: left;
+  color: #000000;
+}
+.wedding__text p {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: left;
+  color: #808080;
+}
+.wedding__text button {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  background-color: white;
+  border: 1px solid black;
+  width: 140px;
+  height: 40px;
+}
+.wedding__height {
+  height: 400px;
+}
+
+.container {
+  width: 1216px !important;
+}
+
+.ftr {
+  border-top: 1px solid #E6E6E6;
+  padding-top: 32px;
+  margin-top: 104px;
+}
+.ftr ul li {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+}
+.ftr ul li h4 {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+.ftr__btn {
+  width: 151px;
+  height: 40px;
+  background: #000000;
+  color: white;
+}
+.ftr__text {
+  width: 384px;
+  height: 48px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+}
+.ftr__title {
+  width: 384px;
+  height: 28px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+.ftr__email {
+  width: 384px;
+}
+.ftr__list ul:nth-child(1) {
+  padding-left: 0;
+}
+.ftr__list li {
+  margin-bottom: 8px;
+  min-width: 176px;
+  height: 24px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+}
+.ftr__copyright {
+  padding: 8px;
+  background-color: #000000;
+}
+.ftr__copyright p {
+  height: 24px;
+  left: 112px;
+  top: 8px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}/*# sourceMappingURL=main.css.map */

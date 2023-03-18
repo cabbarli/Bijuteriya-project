@@ -1,0 +1,80 @@
+.ftr {
+  border-top: 1px solid #E6E6E6;
+  padding-top: 32px;
+  margin-top: 104px;
+}
+.ftr ul li {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+}
+.ftr ul li h4 {
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+.ftr__btn {
+  width: 151px;
+  height: 40px;
+  background: #000000;
+  color: white;
+}
+.ftr__text {
+  width: 384px;
+  height: 48px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+}
+.ftr__title {
+  width: 384px;
+  height: 28px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #000000;
+}
+.ftr__email {
+  width: 384px;
+}
+.ftr__list ul:nth-child(1) {
+  padding-left: 0;
+}
+.ftr__list li {
+  margin-bottom: 8px;
+  min-width: 176px;
+  height: 24px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #808080;
+}
+.ftr__copyright {
+  padding: 8px;
+  background-color: #000000;
+}
+.ftr__copyright p {
+  height: 24px;
+  left: 112px;
+  top: 8px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 0;
+}/*# sourceMappingURL=footer.css.map */
