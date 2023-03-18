@@ -239,6 +239,14 @@
   background: #DD2727;
   color: white;
 }
+.slider__inner {
+  width: 280px;
+  height: 312px;
+}
+.slider__inner img {
+  width: 100%;
+  height: 100%;
+}
 
 .img-box__text {
   position: relative;
@@ -379,4 +387,4 @@
 }
 .wedding__height {
   height: 400px;
-}/*# sourceMappingURL=header.css.map */
+}/*# sourceMappingURL=homepage.css.map */
