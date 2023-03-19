@@ -1,9 +1,9 @@
-.ftr {
+.footer {
   border-top: 1px solid #E6E6E6;
   padding-top: 32px;
   margin-top: 104px;
 }
-.ftr ul li {
+.footer ul li {
   font-family: "Mark Pro";
   font-style: normal;
   font-weight: 400;
@@ -11,7 +11,7 @@
   line-height: 24px;
   color: #808080;
 }
-.ftr ul li h4 {
+.footer ul li h4 {
   font-family: "Mark Pro";
   font-style: normal;
   font-weight: 700;
@@ -19,13 +19,13 @@
   line-height: 28px;
   color: #000000;
 }
-.ftr__btn {
+.footer__btn {
   width: 151px;
   height: 40px;
   background: #000000;
   color: white;
 }
-.ftr__text {
+.footer__text {
   width: 384px;
   height: 48px;
   font-family: "Mark Pro";
@@ -35,7 +35,7 @@
   line-height: 24px;
   color: #808080;
 }
-.ftr__title {
+.footer__title {
   width: 384px;
   height: 28px;
   font-family: "Mark Pro";
@@ -45,31 +45,37 @@
   line-height: 28px;
   color: #000000;
 }
-.ftr__email {
+.footer__email {
   width: 384px;
 }
-.ftr__list {
+.footer__list {
   margin-bottom: 40px;
 }
-.ftr__list ul:nth-child(1) {
+.footer__list ul:nth-child(1) {
   padding-left: 0;
 }
-.ftr__list li {
+.footer__list li {
   margin-bottom: 8px;
   min-width: 176px;
   height: 24px;
+}
+.footer__list li a {
+  text-decoration: none;
+  color: #808080;
   font-family: "Mark Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #808080;
 }
-.ftr__copyright {
+.footer__list li a:hover {
+  text-decoration: underline;
+}
+.footer__copyright {
   padding: 8px;
   background-color: #000000;
 }
-.ftr__copyright p {
+.footer__copyright p {
   height: 24px;
   left: 112px;
   top: 8px;
@@ -80,4 +86,12 @@
   line-height: 24px;
   color: #FFFFFF;
   margin-bottom: 0;
+}
+.footer__sosial {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.footer__sosial a {
+  cursor: pointer;
+  margin-right: 33px;
 }/*# sourceMappingURL=footer.css.map */

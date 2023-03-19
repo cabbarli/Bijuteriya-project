@@ -1,5 +1,5 @@
 @import "variables";
-.ftr {
+.footer {
     border-top: 1px solid #E6E6E6;
     padding-top: 32px;
     margin-top: 104px;
@@ -58,13 +58,19 @@
     li {  
         margin-bottom: 8px;
         min-width: 176px;
-        height: 24px;
-        font-family: 'Mark Pro';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        color: #808080;
+        height: 24px; 
+        a {
+            text-decoration: none; 
+            color: #808080; 
+            font-family: 'Mark Pro';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px; 
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 &__copyright {
@@ -82,5 +88,13 @@
         color: #FFFFFF;
         margin-bottom: 0;
     }
+}
+&__sosial{
+    margin-top: 40px;
+    margin-bottom: 60px;
+ a {
+    cursor: pointer;
+    margin-right: 33px;
+ }
 }
 }

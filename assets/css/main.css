@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "MarkPro";
+  src: local("MarkPro") format("embedded-opentype");
+  src: url("../font/Fontmarkpro/MarkPro.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Black.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-BlackItalic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Bold.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-BoldItalic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Book.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-BookItalic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-ExtraLight.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-ExtraLightItalic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Hairline.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-HairlineItalic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Heavy.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-HeavyItalic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Italic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Light.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-LightItalic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Medium.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-MediumItalic.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-Thin.otf") format("embedded-opentype"), url("../font/Fontmarkpro/MarkPro-ThinItalic.otf") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +15,30 @@
   list-style: none;
 }
 
+* {
+  font-family: "MarkPro";
+}
+
+body {
+  overflow-x: hidden;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.header-line {
+  border-top: 4px solid #EC008C;
+}
+
+.header {
+  margin-top: 15px;
+}
 .header__icon-box a {
   margin-left: 39px;
 }
 .header__lang-box {
-  padding: 0.375rem 1.65rem 0.375rem 0.75rem;
+  padding: 0.375rem 1.85rem 0.375rem 0.75rem;
   font-weight: 350;
   font-size: 14px;
   line-height: 24px;
@@ -26,7 +52,10 @@
 .header__logo img {
   width: 101.26px;
   height: 32px;
-  margin-top: 8px;
+}
+.header__search-button {
+  right: -12px;
+  position: relative;
 }
 .header__stories {
   font-weight: 350;
@@ -42,9 +71,16 @@
   margin-right: 56px;
 }
 .header__navbar li a {
-  color: #333333;
   font-size: 14px;
   font-weight: 350px !important;
+  text-decoration: none;
+  height: 24px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
 }
 .header__dropdown {
   display: flex;
@@ -71,6 +107,7 @@
   margin-top: 20px;
 }
 .header__img-section {
+  margin-top: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,12 +119,27 @@
   width: 100%;
   height: 100%;
 }
+.header__shop-button {
+  display: block;
+  background-color: #000000;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  width: 208px;
+  line-height: 48px;
+  text-decoration: none;
+  margin: auto;
+  height: 48px;
+}
+.header__shop-button:hover {
+  color: #FFFFFF;
+}
 .header__img-text-box {
   position: absolute;
   text-align: center;
-  margin-top: 12%;
+  margin-top: 16%;
 }
 .header__img-text-box h1 {
+  margin-bottom: 15px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -98,6 +150,7 @@
   color: #FFFFFF;
 }
 .header__img-text-box p {
+  margin-bottom: 32px;
   font-family: "Mark Pro";
   font-style: normal;
   font-weight: 400;
@@ -118,20 +171,47 @@
   line-height: 28px;
   text-align: center;
 }
+.header__cateqory {
+  padding-bottom: 24px;
+}
+.header__cateqory h1 {
+  height: 48px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+  margin-top: 15px;
+}
+.header__cateqory p {
+  height: 28px;
+  font-family: "Mark Pro";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #808080;
+}
 
 .content {
   position: relative;
 }
+.content .col {
+  position: relative;
+}
+.content__path:hover + .content__text {
+  background-color: #000000;
+  color: #FFFFFF;
+}
 .content__text {
   width: 268px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   padding: 8px;
   transition: 350ms all;
-}
-.content__text:hover {
-  background-color: #000000;
-  color: #ffffff;
 }
 .content__background {
   left: -110px;
@@ -168,7 +248,16 @@
 
 .slider {
   margin-top: 48px;
-  margin-bottom: 104px;
+  margin-bottom: 184px;
+}
+.slider__path {
+  width: 96%;
+  height: 129%;
+  display: inline-block;
+  top: 0;
+  left: 25px;
+  position: absolute;
+  z-index: 3;
 }
 .slider__title {
   text-align: left;
@@ -189,6 +278,8 @@
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 24px;
+}
+.slider__subtitle a {
   color: #808080;
 }
 .slider__img-title {
@@ -221,6 +312,7 @@
   color: #000000;
 }
 .slider__heart {
+  z-index: 4;
   width: 24px;
   height: 24px;
   top: 16px;
@@ -230,6 +322,9 @@
 .slider__heart img {
   width: 100%;
   height: 100%;
+}
+.slider__heart:hover {
+  cursor: pointer;
 }
 .slider__top-title {
   position: absolute;
@@ -286,6 +381,24 @@
 .img-box__item2 img {
   width: 100%;
   height: 100%;
+}
+
+.discover-button {
+  text-decoration: none;
+  display: block;
+  width: 140px;
+  height: 40px;
+  border: 1px solid #000000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+.discover-button:hover {
+  color: #000000;
+  border-color: #5e5d5d;
 }
 
 .discover {
@@ -403,12 +516,12 @@
   width: 1216px !important;
 }
 
-.ftr {
+.footer {
   border-top: 1px solid #E6E6E6;
   padding-top: 32px;
   margin-top: 104px;
 }
-.ftr ul li {
+.footer ul li {
   font-family: "Mark Pro";
   font-style: normal;
   font-weight: 400;
@@ -416,7 +529,7 @@
   line-height: 24px;
   color: #808080;
 }
-.ftr ul li h4 {
+.footer ul li h4 {
   font-family: "Mark Pro";
   font-style: normal;
   font-weight: 700;
@@ -424,13 +537,13 @@
   line-height: 28px;
   color: #000000;
 }
-.ftr__btn {
+.footer__btn {
   width: 151px;
   height: 40px;
   background: #000000;
   color: white;
 }
-.ftr__text {
+.footer__text {
   width: 384px;
   height: 48px;
   font-family: "Mark Pro";
@@ -440,7 +553,7 @@
   line-height: 24px;
   color: #808080;
 }
-.ftr__title {
+.footer__title {
   width: 384px;
   height: 28px;
   font-family: "Mark Pro";
@@ -450,31 +563,37 @@
   line-height: 28px;
   color: #000000;
 }
-.ftr__email {
+.footer__email {
   width: 384px;
 }
-.ftr__list {
+.footer__list {
   margin-bottom: 40px;
 }
-.ftr__list ul:nth-child(1) {
+.footer__list ul:nth-child(1) {
   padding-left: 0;
 }
-.ftr__list li {
+.footer__list li {
   margin-bottom: 8px;
   min-width: 176px;
   height: 24px;
+}
+.footer__list li a {
+  text-decoration: none;
+  color: #808080;
   font-family: "Mark Pro";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #808080;
 }
-.ftr__copyright {
+.footer__list li a:hover {
+  text-decoration: underline;
+}
+.footer__copyright {
   padding: 8px;
   background-color: #000000;
 }
-.ftr__copyright p {
+.footer__copyright p {
   height: 24px;
   left: 112px;
   top: 8px;
@@ -485,4 +604,12 @@
   line-height: 24px;
   color: #FFFFFF;
   margin-bottom: 0;
+}
+.footer__sosial {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.footer__sosial a {
+  cursor: pointer;
+  margin-right: 33px;
 }/*# sourceMappingURL=main.css.map */
